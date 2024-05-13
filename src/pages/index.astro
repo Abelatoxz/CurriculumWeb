@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import AbelLogo from '../images/AbelLogo.png';
+import "@fontsource-variable/onest";
+import Badge from "../components/Badge.astro";
+import LinkedinIcon from '../icons/Linkedin.astro';
+import SocialPill from '../components/socialPill.astro';
+import GitHubIcon from '../icons/GitHub.astro';
+import DiscordIcon from '../icons/Discord.astro';
+import TelegramIcon from '../icons/Telegram.astro';
+import Mail from '../icons/Mail.astro';
+import ProgresoBarra from '../progressBar/progresobar.astro';
+import LibroIcon from '../icons/Libro.astro';
+import PcIcon from '../icons/PcIcono.astro';
+---
+
+<Layout 
+title="Portafolio de Abel Zverev - Administrador de Sistemas con 3 años de experiencia"
+description='Estudiante de ASIX en busca de prácticas en Barcelona. Apasionado por la tecnología y con ganas de adquirir experiencia práctica en administración de sistemas informáticos. ¡Dispuesto a aportar y aprender en un entorno laboral estimulante! Contáctame para más detalles.'
+>
+	
+<header class="flex justify-center items-center py-5 pl-6 pr-6 w-[1120px] mx-auto">
+
+<nav class="flex flex-row gap-x-10 opacity-90 ">
+    <a href="">Home</a>
+    <a href="">Sobre mi</a>
+    <a href="">Proyectos</a>
+    <a href="">Contacto</a>
+</nav>
+</header>
+	<main class="w-full lg:w-[940px] mx-auto py-44">
+	<Image src={AbelLogo} alt="Abel" class="rounded-full w-12 h-12 mb-2" />
+
+	<section class="pb-10">
+	<div class="items-center">
+	<h1 class="text-white   text-5xl font-bold flex  flex-row  gap-x-4 pb-4">Hola, soy Abel<div class="flex justify-center items-center"> <Badge>Disponible</Badge> </a> </div> </h1> 
+	</div>
+	<h2 class="mt-5 text-2xl opacity-90 text-wrap">Soy un estudiante de Barcelona, España con algo experiencia con pequeños proyectos, esta es mi primera pagina web usando Astro y tailwind a la vez.</h2>
+	<nav class="flex gap-x-3 mt-5">
+	
+		<SocialPill href="https://www.linkedin.com/in/abelatox-z-b22784253/">
+			<LinkedinIcon class="w-6 h-6"/>
+				LinkedIn
+		</SocialPill>
+		<SocialPill href="https://github.com/Abelatoxz">
+			<GitHubIcon class="w-6 h-6"/>
+				GitHub
+		</SocialPill>
+		<SocialPill>
+			<DiscordIcon class="w-6 h-6"/>
+ 					 abelinuxz
+		</SocialPill>
+		<SocialPill>
+			<TelegramIcon class="w-6 h-6"/>
+				@abelinuxz
+		</SocialPill>
+		<SocialPill>
+			<Mail class="w-6 h-6"/>
+			abel@abelflix.es
+		</SocialPill>
+		
+	
+		
+	</nav>	
+		
+	
+	</section>
+<h2 class="py-5 text-3xl font-bold  flex items-center ">  <div class="pr-4">Curriculum</div><LibroIcon class="size-7"></LibroIcon></h2> 
+<ol class="relative border-s border-gray-200 dark:border-gray-700 pb-9">     
+            
+    <li class="mb-10 ms-4">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Setiembre 2021 - Falta colocar cuando acabo</time>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Grado Medio SMX - Ins La Pineda</h3>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">En este año aprendí muchisimas nociones basicas que me permitieron avanzar en mi casa y en mi tiempo libre.</p>
+  </svg></a>
+    </li>
+    <li class="mb-10 ms-4">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Dia Random</time>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Grado Superior ASIX - Ins La Pineda</h3>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400">En este año ya con la ayuda de mis nociones basicas empece a profundizar muchisimo mas y lo cual me permitio llegar a niveles mas elevados</p>
+    </li>
+
+
+</ol>
+<h2 class="py-5 text-3xl font-bold ft-9 flex items-center"><div class="pr-4">Skillset</div><PcIcon class="size-7"></PcIcon></h2> 
+<ol class="grid gap-4">	
+	<li>
+		<h4 class="text-1xl opacity-70">Linux - Servidor</h4>
+		<ProgresoBarra Style="width: 70%" >70%</ProgresoBarra>
+	</li>
+	<li>
+		<h4 class="text-1xl opacity-70">FontEnd - HTML && CSS</h4>
+		<ProgresoBarra Style="width: 50%" >50%</ProgresoBarra>
+	</li>
+	<li>
+		<h4 class="text-1xl opacity-70">Linux</h4>
+		<ProgresoBarra Style="width: 45%" >45%</ProgresoBarra>
+	</li>
+</ol>
+<h2 class="py-5 mt-9 text-3xl font-bold ft-9">Proyectos</h2> 
+
+
+	</main>
+</Layout>
+
