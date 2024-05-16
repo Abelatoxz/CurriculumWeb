@@ -14,6 +14,12 @@ import Mail from '../icons/Mail.astro';
 import ProgresoBarra from '../progressBar/progresobar.astro';
 import LibroIcon from '../icons/Libro.astro';
 import PcIcon from '../icons/PcIcono.astro';
+import Footer from '../components/footer.astro';
+import Progresobar from '../progressBar/progresobar.astro';
+import Carpeta from '../icons/Carpetra.astro'
+import DesguacesPedro from '../images/LogoDesguacesPedro.png';
+import Abelflix from '../images/ABELFLIX.png';
+import HammerFell from '../images/hammerfell.png';
 ---
 
 <Layout 
@@ -21,44 +27,48 @@ title="Portafolio de Abel Zverev - Administrador de Sistemas con 3 años de expe
 description='Estudiante de ASIX en busca de prácticas en Barcelona. Apasionado por la tecnología y con ganas de adquirir experiencia práctica en administración de sistemas informáticos. ¡Dispuesto a aportar y aprender en un entorno laboral estimulante! Contáctame para más detalles.'
 >
 	
-<header class="flex justify-center items-center py-5 pl-6 pr-6 w-[1120px] mx-auto">
+<header class="flex justify-center items-center py-5 pl-6 pr-6  w-[800px] xl:w-[1120px] mx-auto ">
 
-<nav class="flex flex-row gap-x-10 opacity-90 ">
+<nav class="flex flex-row gap-x-10 opacity-90 text-2xl ">
     <a href="">Home</a>
     <a href="">Sobre mi</a>
     <a href="">Proyectos</a>
     <a href="">Contacto</a>
 </nav>
-</header>
-	<main class="w-full lg:w-[940px] mx-auto py-44">
-	<Image src={AbelLogo} alt="Abel" class="rounded-full w-12 h-12 mb-2" />
+</header> 
+	<main class="w-[720px] lg:w-[1220px] mx-auto py-44 content-center items-center justify-center">
+	<Image src={AbelLogo} alt="Abel" class=" size-20  ml-5 lg:ml-0 lg:size-35 mb-2 rounded-lg " />
 
 	<section class="pb-10">
 	<div class="items-center">
-	<h1 class="text-white   text-5xl font-bold flex  flex-row  gap-x-4 pb-4">Hola, soy Abel<div class="flex justify-center items-center"> <Badge>Disponible</Badge> </a> </div> </h1> 
+	<h1 class="text-white  ml-5 lg:ml-0 text-6xl  font-bold flex  flex-row lg:text-5xl gap-x-4 pb-4">Hola, soy Abel <div class="flex justify-center items-center "> <Badge>Disponible</Badge> </a> </div> </h1> 
 	</div>
-	<h2 class="mt-5 text-2xl opacity-90 text-wrap">Soy un estudiante de Barcelona, España con algo experiencia con pequeños proyectos, esta es mi primera pagina web usando Astro y tailwind a la vez.</h2>
-	<nav class="flex gap-x-3 mt-5">
+	<h2 class="mt-5 text-2xl opacity-90  ml-5 lg:ml-0 text-wrap">Soy un estudiante de Barcelona, España con algo experiencia con pequeños proyectos, esta es mi primera pagina web usando Astro y tailwind a la vez.</h2>
+	<nav class="flex ml-5 lg:ml-0  gap-x-3 mt-5 ">
 	
 		<SocialPill href="https://www.linkedin.com/in/abelatox-z-b22784253/">
-			<LinkedinIcon class="w-6 h-6"/>
-				LinkedIn
+			<LinkedinIcon class="size-11 lg:size-6 "/>
+				<div class="sr-only lg:not-sr-only">LinkedIn</div>
 		</SocialPill>
 		<SocialPill href="https://github.com/Abelatoxz">
-			<GitHubIcon class="w-6 h-6"/>
-				GitHub
+			<GitHubIcon class="size-11  lg:size-6  "/>
+				
+				<div class="sr-only lg:not-sr-only">GitHub</div>
 		</SocialPill>
 		<SocialPill>
-			<DiscordIcon class="w-6 h-6"/>
- 					 abelinuxz
+			<DiscordIcon class="size-11  lg:size-6"/>
+			<div class="sr-only lg:not-sr-only">abelinuxz</div>
+ 					 
 		</SocialPill>
 		<SocialPill>
-			<TelegramIcon class="w-6 h-6"/>
-				@abelinuxz
+			<TelegramIcon class="size-11  lg:size-6"/>
+			<div class="sr-only lg:not-sr-only">@abelinuxz</div>
+				
 		</SocialPill>
 		<SocialPill>
-			<Mail class="w-6 h-6"/>
-			abel@abelflix.es
+			<Mail class="size-11  lg:size-6"/>
+			<div class="sr-only lg:not-sr-only">abel@abelflix.es</div>
+
 		</SocialPill>
 		
 	
@@ -67,43 +77,89 @@ description='Estudiante de ASIX en busca de prácticas en Barcelona. Apasionado 
 		
 	
 	</section>
-<h2 class="py-5 text-3xl font-bold  flex items-center ">  <div class="pr-4">Curriculum</div><LibroIcon class="size-7"></LibroIcon></h2> 
-<ol class="relative border-s border-gray-200 dark:border-gray-700 pb-9">     
+<h2 class="py-5 text-3xl font-bold ml-5 lg:ml-0 flex items-center ">  <div class="pr-4 text-4xl">Curriculum</div><LibroIcon class="size-9"></LibroIcon></h2> 
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-5 lg:ml-0 pb-9">     
             
     <li class="mb-10 ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Setiembre 2021 - Falta colocar cuando acabo</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Grado Medio SMX - Ins La Pineda</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">En este año aprendí muchisimas nociones basicas que me permitieron avanzar en mi casa y en mi tiempo libre.</p>
+        <time class="mb-1  font-normal leading-none  text-2xl text-gray-400 dark:text-gray-500">Setiembre 2021 - Falta colocar cuando acabo</time>
+        <h3 class=" text-2xl font-semibold text-gray-900 dark:text-white">Grado Medio SMX - Ins La Pineda</h3>
+        <p class="mb-4  text-2xl font-normal text-gray-500 dark:text-gray-400">En este año aprendí muchisimas nociones basicas que me permitieron avanzar en mi casa y en mi tiempo libre.</p>
   </svg></a>
     </li>
     <li class="mb-10 ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Dia Random</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Grado Superior ASIX - Ins La Pineda</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">En este año ya con la ayuda de mis nociones basicas empece a profundizar muchisimo mas y lo cual me permitio llegar a niveles mas elevados</p>
+        <time class="mb-1  font-normal leading-none  text-2xl text-gray-400 dark:text-gray-500">Dia Random</time>
+        <h3 class=" text-2xl font-semibold text-gray-900 dark:text-white">Grado Superior ASIX - Ins La Pineda</h3>
+        <p class=" text-2xl text-gray-500 dark:text-gray-400">En este año ya con la ayuda de mis nociones basicas empece a profundizar muchisimo mas y lo cual me permitio llegar a niveles mas elevados</p>
     </li>
 
 
 </ol>
-<h2 class="py-5 text-3xl font-bold ft-9 flex items-center"><div class="pr-4">Skillset</div><PcIcon class="size-7"></PcIcon></h2> 
-<ol class="grid gap-4">	
+<h2 class="py-5  font-bold ft-9 flex text-4xl items-center"><div class="ml-5 lg:ml-0  pr-4">Skillset</div><PcIcon class="size-9"></PcIcon></h2> 
+<ol class="grid ml-5 lg:ml-0  gap-4  align-center justify-stretch  w-[770px] lg:w-full ">	
 	<li>
-		<h4 class="text-1xl opacity-70">Linux - Servidor</h4>
-		<ProgresoBarra Style="width: 70%" >70%</ProgresoBarra>
+		<h4 class="text-2xl opacity-70">Linux - Servidor</h4>
+		<ProgresoBarra  Style="width: 80%" > <div class="text-[19px]">80% </div></ProgresoBarra>
 	</li>
 	<li>
-		<h4 class="text-1xl opacity-70">FontEnd - HTML && CSS</h4>
-		<ProgresoBarra Style="width: 50%" >50%</ProgresoBarra>
+		<h4 class="text-2xl opacity-70">FontEnd - HTML && CSS</h4>
+		<ProgresoBarra Style="width: 80%" >  <div class="text-[19px]">80% </div></ProgresoBarra>
 	</li>
 	<li>
-		<h4 class="text-1xl opacity-70">Linux</h4>
-		<ProgresoBarra Style="width: 45%" >45%</ProgresoBarra>
+		<h4 class="text-2xl opacity-70">BackEnd - PHP</h4>
+		<ProgresoBarra Style="width: 70%" ><div class="text-[19px]">70% </div></ProgresoBarra>
+	</li>
+	<li>
+		<h4 class="text-2xl opacity-70">Windows - Servidor</h4>
+		<Progresobar Style="width: 60%"><div class="text-[19px]">60% </div></Progresobar>
+	</li>
+	<li>
+		<h4 class="text-2xl opacity-70">Docker</h4>
+		<ProgresoBarra Style="width: 80%"><div class="text-[19px]">80% </div></ProgresoBarra>
+	</li>
+	<li>
+		<h4 class="text-2xl opacity-70">Servidores de Videojuegos</h4>
+		<ProgresoBarra Style="width: 90%"><div class="text-[19px]">90% </div> </ProgresoBarra>
+	</li>
+	<li>
+		<h4 class="text-2xl opacity-70">Python3</h4>
+		<ProgresoBarra Style="width: 70%"><div class="text-[19px]">70% </div></ProgresoBarra>
+	</li>
+	<li>
+		<h4 class="text-2xl opacity-70">Java</h4>
+		<ProgresoBarra Style="width: 70%"><div class="text-[19px]">70% </div></ProgresoBarra>
 	</li>
 </ol>
-<h2 class="py-5 mt-9 text-3xl font-bold ft-9">Proyectos</h2> 
 
+<h2 class="py-5  font-bold ft-9 flex text-4xl items-center"><div class="ml-5 lg:ml-0  pr-4">Proyectos</div><Carpeta class="size-10"></Carpeta></h2> 
+<div class="grid grid-cols-2 gap-2 justify-center items-center">
+<div class=" ml-5">         <h3 class=" text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-white">Desguaces Pedro</h3>
+<div class="text-xl text-gray-500 lg:text-2xl  dark:text-gray-400">Fue un proyecto de php el cual me tomo mucho esfuerzo configurar, adaptar y optimizar.</div></div>
+<div class="justify-items-end grid">
+	<Image src={DesguacesPedro} alt="Abel" class=" size-90   lg:w-[560px] ml-5 lg:ml-0 lg:size-35 mb-2 rounded-lg " />
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 justify-center items-center">
+<div class="grid">
+	<Image src={Abelflix} alt="Abel" class=" h-64 w-72 lg:w-[560px]  ml-5 lg:ml-0 lg:h-72  mb-2 rounded-lg " />
+</div>
+<div class="justify-items-end   ml-7 ">
 
+ <h3 class=" text-2xl font-semibold text-gray-900 lg:text-3xl dark:text-white">Abelflix</h3>
+<div class="text-xl text-gray-500 lg:text-2xl dark:text-gray-400">Fue un proyecto de php el cual me tomo mucho esfuerzo configurar, adaptar y optimizar.</div>
+ <Badge>Disponible</Badge> 
+</div>
+<div class=" ml-5"> <h3 class=" text-2xl  lg:text-3xl font-semibold text-gray-900 dark:text-white">Hammerfell</h3>
+<div class="text-xl lg:text-2xl	 text-gray-500 dark:text-gray-400">Fue un proyecto de php el cual me tomo mucho esfuerzo configurar, adaptar y optimizar.</div></div>
+<div class="justify-items-end grid">
+	<Image src={HammerFell} alt="Abel" class=" h-14 w-80	 ml-5 lg:ml-0 lg:h-20 lg:w-[560px] mb-2  " />
+</div>
+</div>
+</div>
 	</main>
+	<Footer href="https://abelflix.es">
+
+	</Footer>
 </Layout>
 
