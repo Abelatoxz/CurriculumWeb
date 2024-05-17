@@ -26,7 +26,7 @@ import Imagenes from '../Imagenes/imagenes.astro';
 
 <Layout 
 title="Portafolio de Abel Zverev - Administrador de Sistemas con 3 años de experiencia"
-description='Estudiante de ASIX en busca de prácticas en Barcelona. Apasionado por la tecnología y con ganas de adquirir experiencia práctica en administración de sistemas informáticos. ¡Dispuesto a aportar y aprender en un entorno laboral estimulante! Contáctame para más detalles.'
+description='Estudiante de ASIX con experiencia en administración de sistemas informáticos. Busca prácticas en Barcelona. Conoce mis proyectos y habilidades.'
 >
 	
 <header class="flex justify-center items-center py-5 pl-6 pr-6  w-[800px] xl:w-[1120px] mx-auto ">
@@ -34,7 +34,7 @@ description='Estudiante de ASIX en busca de prácticas en Barcelona. Apasionado 
 
 </header> 
 	<main class="w-[720px] lg:w-[1220px] mx-auto py-44 content-center items-center justify-center">
-	<Image loading="eager"   src={AbelLogo}  alt="Abel" class=" size-20  ml-5 lg:ml-0 lg:size-35 mb-2 rounded-lg "   />
+	<Image loading="eager"   src={AbelLogo}  alt="Logo de Abel Zverev" class=" size-20  ml-5 lg:ml-0 lg:size-35 mb-2 rounded-lg "   />
 
 	<section class="pb-10">
 	<div class="items-center">
@@ -121,36 +121,65 @@ description='Estudiante de ASIX en busca de prácticas en Barcelona. Apasionado 
 		<ProgresoBarra Style="width: 70%"><div class="text-[19px]">70% </div></ProgresoBarra>
 	</li>
 </ol>
+<h2 class="py-5 font-bold text-4xl flex items-center">
+  <div class="ml-5 text-white lg:ml-0 pr-4">Proyectos</div>
+  <Carpeta class="size-10 text-white"></Carpeta>
+</h2>
 
-<h2 class="py-5  font-bold ft-9 flex text-4xl items-center"><div class="ml-5  text-white lg:ml-0  pr-4">Proyectos</div><Carpeta class="size-10  text-white"></Carpeta></h2> 
 <div class="grid grid-cols-2 gap-2 justify-center items-center">
-<div class=" ml-5">         <h3 class=" text-3xl font-semibold  text-white lg:text-3xl dark:text-white">Desguaces Pedro</h3>
-<div class="text-2xl text-gray-500 lg:text-2xl  dark:text-gray-400">En este proyecto instale y configure un  <br/>Prestashop con NGINX y php-fpm8.1, el cual indexe en google y el cual personalice el CSS3 y automatice un sistema de BackUps al Drive.</div>
- <div class="sr-only lg:not-sr-only"><Badge  href="https://desguacespedro.abelflix.es/index.phps">Enlace</Badge> </div>
+  <!-- Proyecto Desguaces Pedro -->
+  <div class="ml-5">
+    <h3 class="text-3xl font-semibold text-white lg:text-3xl dark:text-white">Desguaces Pedro</h3>
+    <div class="text-2xl text-gray-500 lg:text-2xl dark:text-gray-400">
+      En este proyecto instalé y configuré un Prestashop con NGINX y php-fpm8.1, el cual indexé en Google, personalicé el CSS3 y automatice un sistema de BackUps al Drive.
+    </div>
+    <div class="sr-only lg:not-sr-only">
+      <Badge href="https://desguacespedro.abelflix.es/index.php">Enlace</Badge>
+    </div>
+  </div>
+  <div class="justify-items-end grid">
+    <a href="https://desguacespedro.abelflix.es/index.php">
+      <Image src={DesguacesPedro} alt="Logo Desguaces Pedro" class="size-90 lg:w-[560px] ml-5 lg:ml-0 lg:size-35 mb-2 rounded-lg" />
+    </a>
+  </div>
 </div>
-<div class="justify-items-end grid">
-	<a href="https://desguacespedro.abelflix.es/index.php"><Image src={DesguacesPedro} alt="Abel" class=" size-90   lg:w-[560px] ml-5 lg:ml-0 lg:size-35 mb-2 rounded-lg " /></a>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-2 justify-center items-center">
-<div class="grid">
-	<a href="https://abelflix.es"><Image src={Abelflix} alt="Abel" class=" h-64 w-72 lg:w-[560px]  ml-5 lg:ml-0 lg:h-72  mb-2 rounded-lg " /></a>
-</div>
-<div class="justify-items-end   ml-7 ">
 
- <h3 class=" text-3xl font-semibold  text-white lg:text-3xl dark:text-white">Abelflix</h3>
-<div class="text-2xl text-gray-500 lg:text-2xl dark:text-gray-400">Este fue mi primer proyecto en el mundo de la administración de servicios, el cual trata de un servidor JellyFin con acceleracion por hardware y con integracion a la API de MyAnimeList.</div>
- <div class="sr-only lg:not-sr-only"><Badge  href="https://abelflix.es">Enlace</Badge> </div>
+<div class="grid grid-cols-2 gap-2 justify-center items-center">
+  <!-- Proyecto Abelflix -->
+  <div class="grid">
+    <a href="https://abelflix.es">
+      <Image src={Abelflix} alt="Logo de Abelflix" class="h-64 w-72 lg:w-[560px] ml-5 lg:ml-0 lg:h-72 mb-2 rounded-lg" />
+    </a>
+  </div>
+  <div class="justify-items-end ml-7">
+    <h3 class="text-3xl font-semibold text-white lg:text-3xl dark:text-white">Abelflix</h3>
+    <div class="text-2xl text-gray-500 lg:text-2xl dark:text-gray-400">
+      Este fue mi primer proyecto en el mundo de la administración de servicios, el cual trata de un servidor JellyFin con aceleración por hardware y con integración a la API de MyAnimeList.
+    </div>
+    <div class="sr-only lg:not-sr-only">
+      <Badge href="https://abelflix.es">Enlace</Badge>
+    </div>
+  </div>
 </div>
-<div class=" ml-5"> <h3 class=" text-3xl  lg:text-3xl font-semibold text-gray-900 text-white">Hammerfell</h3>
-<div class="text-2xl lg:text-2xl	 text-gray-500 dark:text-gray-400">Este es mi proyecto el cual actualmente estoy trabajando, el cual trata de hacer un Cluster de servidores de minecraft con plugins, con un sistema de BackUps. <br/>Tambien estoy desrollando un plugin el cual me permita guardar el inventario del jugador y que se pueda mover por el cluster.</div>
- <div class="sr-only lg:not-sr-only"><Badge  href="https://hammerfell.abelflix.es/">Enlace</Badge> </div>
+
+<div class="grid grid-cols-2 gap-2 justify-center items-center">
+  <!-- Proyecto Hammerfell -->
+  <div class="ml-5">
+    <h3 class="text-3xl lg:text-3xl font-semibold text-white">Hammerfell</h3>
+    <div class="text-2xl lg:text-2xl text-gray-500 dark:text-gray-400">
+      Este es mi proyecto en el que actualmente estoy trabajando. Trata de hacer un cluster de servidores de Minecraft con plugins y un sistema de backups. También estoy desarrollando un plugin que permita guardar el inventario del jugador y que se pueda mover por el cluster.
+    </div>
+    <div class="sr-only lg:not-sr-only">
+      <Badge href="https://hammerfell.abelflix.es/">Enlace</Badge>
+    </div>
+  </div>
+  <div class="justify-items-end grid">
+    <a href="https://hammerfell.abelflix.es/">
+      <Image src={HammerFell} alt="Logo de HammerFell" class="h-14 w-80 ml-5 lg:ml-0 lg:h-20 lg:w-[560px] mb-2" />
+    </a>
+  </div>
 </div>
-<div class="justify-items-end grid">
-	<a href="https://hammerfell.abelflix.es/"><Image src={HammerFell} alt="Abel" class=" h-14 w-80	 ml-5 lg:ml-0 lg:h-20 lg:w-[560px] mb-2  " /></a>
-</div>
-</div>
-</div>
+
 </main>
 
 </Layout>

@@ -21,6 +21,27 @@ const { description,title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		  <!-- Metadatos para redes sociales -->
+  		<meta property="og:title" content="Portafolio de Abel Zverev - Administrador de Sistemas" />
+  		<meta property="og:description" content="Estudiante de ASIX con experiencia en administración de sistemas informáticos. Busca prácticas en Barcelona. Conoce mis proyectos y habilidades." />
+  		<meta property="og:image" content="path/to/AbelLogo.png" />
+  		<meta property="og:url" content="https://abelflix.es" />
+  		<meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD para esquema de datos estructurados -->
+  		<script type="application/ld+json">
+  			{
+    			"@context": "http://schema.org",
+    			"@type": "Person",
+    			"name": "Abel Zverev",
+    			"jobTitle": "Estudiante de ASIX",
+    			"url": "https://abelflix.es",
+    			"sameAs": [
+      				"https://www.linkedin.com/in/abel-zverev-b22784253/",
+      				"https://github.com/Abelatoxz"
+    			]
+  			}
+  		</script>
 		
 	</head>
 	<body class="bg-neutral-950 " >
